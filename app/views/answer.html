@@ -1,0 +1,26 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">My birthday is</h1>
+     <p>{% include "includes/your-name.html" %}</p>
+
+      <form class="form" action="/url/of/next/page" method="post">
+
+        <p>{{ data['day'] }}{{ data['month'] }}{{ data['year'] }}</p>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
