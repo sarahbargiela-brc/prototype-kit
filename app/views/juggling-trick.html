@@ -13,13 +13,16 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">What is the most impressive juggling trick?</h1>
+      <h1 class="govuk-heading-xl">What is your most impressive juggling trick?</h1>
 
       <form class="form" action="/check-your-answers" method="post">
 
-        <p>[Insert question content here]</p>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="more-detail">
+            </label>
 
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+      <textarea class="govuk-textarea" id="more-detail" name="most-impressive-trick" rows="5" aria-describedby="more-detail-hint" {{ data['most-impressive-trick'] }}></textarea>
+  </div>
 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 
