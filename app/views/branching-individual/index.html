@@ -1,0 +1,51 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/branching-individual/individual-yes" method="post" class="form">
+
+        <h1 class="govuk-heading-xl">
+          Are you asking for help for an individual or for an organisation?
+        </h1>
+
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          </legend>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="individual-yes" name="individual" type="radio" value="true">
+              <label class="govuk-label govuk-radios__label" for="individual-yes">
+                For an individual
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="individual-no" name="individual" type="radio" value="false">
+              <label class="govuk-label govuk-radios__label" for="individual-no">
+                For an organisation
+              </label>
+            </div>
+          </div>
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" button style="background-color": #008CBA; data-module="govuk-button">Continue</button>
+
+      </form>
+
+      <p>
+        <a href="/branching-england/index">Back</a>
+      </p>
+
+    </div>
+  </div>
+{% endblock %}
