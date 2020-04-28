@@ -17,10 +17,40 @@
 {% endblock %}
 
 {% block header %}
-<header style="background-color: white; border-bottom: solid 1px #e2e2e2;" class="govuk-header " role="banner" data-module="govuk-header">
-  <div style="border-bottom: solid 0px #fff;" class="govuk-header__container govuk-width-container">
-    <h1 style="color: #000; margin-top: 30px;"> Get Help as a Local Organisation </h1>
+{% include "includes/header.html" %}
+<header id="brc-header" class="govuk-header " role="banner" data-module="govuk-header" style="background-color: #434142;">
+  <div class="govuk-header__container govuk-width-container" style="border-bottom: 0px;">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+        <div>
+          <p id="phase-banner" class="govuk-phase-banner__content" style="margin-bottom: 10px;">
+            <strong id="phase-tag" class="govuk-tag govuk-phase-banner__content__tag">
+              new
+            </strong>
+            <span class="govuk-phase-banner__text">
+              This is a new service – your <a class="govuk-link" href="https://forms.office.com/Pages/ResponsePage.aspx?id=ujzc_l7KiEOoN7Rcfw1xt4p2iO6lNB9HqiDK9QBqA69UNk1RSFdHQjk4VlVFWjE5Q0hEREhKSFI0My4u" target="_blank">feedback</a> will help us to improve it.
+            </span>
+          </p>
+        </div>
+        </div>
+    </div>
+
   </div>
+</header>
+<header id="home-banner" class="govuk-header " role="banner" data-module="govuk-header" style="background-color: #f5a036;">
+    <div class="govuk-header__container govuk-width-container" style="border-bottom: 0px; padding-bottom: 40px; padding-top: 25px;">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <h1 class="govuk-heading-xl" style="margin-bottom: 20px; color: #434142">
+            Get help as a local organisation
+          </h1>
+          <p class="govuk-body" style="margin-bottom: 0px; color: #434142">The 'Get Help as a Local Organisation' service allows local groups and organisations affected by coronavirus (COVID-19) to ask for support
+          </p>
+        </div>
+      </div>
+    </div>
 </header>
 {% endblock %}
 
