@@ -9,20 +9,41 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      <form action="/branching-england/england-yes" method="post" class="form">
+
         <h1 class="govuk-heading-xl">
-          You are an organisation asking for help.
+          Is your organisation based in England?
         </h1>
 
-        <p>
-          Please complete this form to tell us about what your organisation needs. It should take about 5 minutes.
-        </p>
 
-            <a id="button" class="govuk-button black-button govuk-!-margin-right-1" href="https://forms.office.com/Pages/ResponsePage.aspx?id=ujzc_l7KiEOoN7Rcfw1xt8GKZBy9uEJFm0CpljV6VGlURDRNQzZLTlFBRUFTTDFURkxPNDE0STdHOC4u" target="_blank">Start</a></p>
-            
-            <a id="button" class="govuk-button govuk-button--secondary" href="/branching-individual/index">Back</a>
-    
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          </legend>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="in-england-yes" name="england" type="radio" value="true">
+              <label class="govuk-label govuk-radios__label" for="in-england-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="in-england-no" name="england" type="radio" value="false">
+              <label class="govuk-label govuk-radios__label" for="in-england-no">
+                No
+              </label>
+            </div>
           </div>
+          </fieldset>
         </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+      <p>
+        <a href="/index">Back</a>
+      </p>
 
     </div>
   </div>

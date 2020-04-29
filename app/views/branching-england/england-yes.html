@@ -1,50 +1,31 @@
+For England yes page
+
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
   GOV.UK Prototype Kit
 {% endblock %}
 
-
 {% block content %}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <form action="/branching-individual/individual-yes" method="post" class="form">
-
         <h1 class="govuk-heading-xl">
-          Are you looking to get help for an individual or for an organisation?
+          You are an organisation asking for help.
         </h1>
 
+        <p>
+          Please complete this form to tell us about what your organisation needs. It should take about 5 minutes.
+        </p>
 
-        <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-          </legend>
-          <div class="govuk-radios govuk-radios--inline">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="individual-yes" name="individual" type="radio" value="true">
-              <label class="govuk-label govuk-radios__label" for="individual-yes">
-                For an individual
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="individual-no" name="individual" type="radio" value="false">
-              <label class="govuk-label govuk-radios__label" for="individual-no">
-                For an organisation
-              </label>
-            </div>
+          <p>
+            <a id="button" class="govuk-button black-button govuk-!-margin-right-1" href="https://forms.office.com/Pages/ResponsePage.aspx?id=ujzc_l7KiEOoN7Rcfw1xt8GKZBy9uEJFm0CpljV6VGlURDRNQzZLTlFBRUFTTDFURkxPNDE0STdHOC4u" target="_blank">Start</a></p>
+            <p>
+              <a id="button" class="govuk-button govuk-button--secondary" href="/branching-individual/index">Back</a> </p>
+
           </div>
-          </fieldset>
         </div>
-
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
-
-      </form>
-
-      <p>
-        <a href="/branching-individual/index">Back</a>
-      </p>
 
     </div>
   </div>
